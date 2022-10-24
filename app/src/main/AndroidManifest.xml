@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.celebrities">
+    package="com.example.celebrities" >
 
     <application
         android:name=".QuotesApp"
@@ -9,15 +9,25 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Celebrities">
+        android:theme="@style/Theme.Celebrities" >
         <activity
-            android:name=".presentation.view.QuoteRandomActivity"
-            android:exported="true">
+            android:name=".presentation.view.NavigationDrawerActivity"
+            android:exported="true"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/Theme.Celebrities.NoActionBar" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".presentation.view.QuoteRandomActivity"
+            android:exported="false" >
         </activity>
     </application>
 
