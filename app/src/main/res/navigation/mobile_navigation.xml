@@ -11,6 +11,12 @@
         android:label="Cita aleatoria"
         tools:layout="@layout/fragment_quote_random" />
 
+    <fragment
+        android:id="@+id/nav_insert"
+        android:name="com.example.celebrities.presentation.view.ui.insert.InsertFragment"
+        android:label="Cita aleatoria"
+        tools:layout="@layout/fragment_quote_random" />
+
     <!--<fragment
         android:id="@+id/nav_home"
         android:name="com.example.celebrities.presentation.view.ui.home.HomeFragment"
